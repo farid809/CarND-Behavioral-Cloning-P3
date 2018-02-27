@@ -55,7 +55,7 @@ This project includes the following files:
 * model.h5 containing a trained convolution neural network 
 * writeup_report.md  summarizing the results
 
-#### 2. Submission includes functional code
+#### 2. Model Training and driving code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
 ```sh
 python drive.py model.h5
@@ -76,13 +76,13 @@ My data collection approach consist of the following :
 
 ## Model Architecture and Training Strategy
 
-### 1. An appropriate model architecture has been employed
+### 1. Model Architecture
 
 My model Final model is based on nVidiaconsists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
 
 The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
 
-### 2. Attempts to reduce overfitting in the model
+### 2. Overfitting
 
 The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
 
