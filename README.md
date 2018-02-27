@@ -15,7 +15,7 @@ Overview
 ---
 
 
-In this project, I'm using deep neural networks and convolutional neural networks to clone driving behavior. I provided below step by step guide showing the approach i used to to train, validate and test a model using Keras. The model will output a steering angle to a simulated autonomous vehicle. The simulator are also used to gather the training data by capturing the steering angle and speed of a human drive (behavior cloning).
+In this project, I'm using deep neural networks and convolutional neural networks to clone driving behavior. I provided below step by step guide showing the approach i used to to train, validate and test a model using Keras. The model will output a steering angle to a simulated autonomous vehicle. A simulator are also used to gather the training data by capturing the steering angle and speed of a human drive (behavior cloning).
 
 Project Files: 
 * model.py (script used to create and train the model)
@@ -42,16 +42,16 @@ This lab requires:
 
 The lab enviroment can be created with CarND Term1 Starter Kit. Click [here](https://github.com/udacity/CarND-Term1-Starter-Kit/blob/master/README.md) for the details.
 
-The following resources can be found in this github repository:
+The following files are submitted
 * drive.py
 * video.py
 * writeup_template.md
 
-The simulator can be downloaded from the classroom. In the classroom, we have also provided sample data that you can optionally use to help train your model.
+
 
 
 ---
-### Files Submitted & Code Quality
+### Files Submitted 
 
 #### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
