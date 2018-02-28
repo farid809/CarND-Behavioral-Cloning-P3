@@ -7,8 +7,8 @@
 [image3]: ./examples/placeholder_small.png "Recovery Image"
 [image4]: ./examples/placeholder_small.png "Recovery Image"
 [image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+[image6]: ./images/image-original.png "Normal Image"
+[image7]: ./images/image-flipped.png "Flipped Image"
 [image8]: ./images/track1.gif "Track 1 Animation"
 [image9]: ./images/recovery.gif "Recovery Animation"
 
