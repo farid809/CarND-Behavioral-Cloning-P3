@@ -12,6 +12,7 @@
 [image8]: ./images/track1.gif "Track 1 Animation"
 [image9]: ./images/recovery.gif "Recovery Animation"
 
+Test Input Image
 [image10]: ./images/test_input.png "Test Input Image"
 [image11]: ./images/lambda_out.png "Lambda Layer ouptut"
 [image12]: ./images/Cropping2d_out.png "Cropping2D output"
@@ -126,7 +127,7 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
 The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
 
-Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
+Here is a visualization of the architecture using Keras plot_model from keras.utils library 
 
 ![alt text][image1]
 
