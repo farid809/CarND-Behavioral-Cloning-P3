@@ -12,6 +12,10 @@
 [image8]: ./images/track1.gif "Track 1 Animation"
 [image9]: ./images/recovery.gif "Recovery Animation"
 
+[image10]: ./images/test_input.png "Test Input Image"
+[image11]: ./images/lambda_out.png "Lambda Layer ouptut"
+[image12]: ./images/Cropping2d_out.png "Cropping2D output"
+
 
 Overview
 ---
@@ -126,6 +130,7 @@ Here is a visualization of the architecture (note: visualizing the architecture 
 
 ![alt text][image1]
 
+
 ### 3. Creation of the Training Set & Training Process
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
@@ -144,16 +149,22 @@ To augment the data sat, I also flipped images and angles thinking that this wou
 ![alt text][image6]
 ![alt text][image7]
 
+
 Etc ....
 
 After the collection process, I had X number of data points. I then preprocessed this data by ...
 
 
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
+I randomly shuffled the data set and put Y% of the data into a validation set. 
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
 
+Finally, I tested the model using sample input image and visualized the output of Frist and 2nd layers. Below are sample output from Lambda and Cropping2D layers respectively. 
+
+![alt text][image10]
+![alt text][image11]
+![alt text][image12]
 
 ## Details About Files In This Directory
 
