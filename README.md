@@ -12,7 +12,7 @@
 [image8]: ./images/track1.gif "Track 1 Animation"
 [image9]: ./images/recovery.gif "Recovery Animation"
 
-Test Input Image
+
 [image10]: ./images/test_input.png "Test Input Image"
 [image11]: ./images/lambda_out.png "Lambda Layer ouptut"
 [image12]: ./images/Cropping2d_out.png "Cropping2D output"
