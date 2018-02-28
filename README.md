@@ -162,8 +162,13 @@ I used this training data for training the model. The validation set helped dete
 
 Finally, I tested the model using sample input image and visualized the output of Frist and 2nd layers. Below are sample output from Lambda and Cropping2D layers respectively. 
 
+Original Input Image
 ![alt text][image10]
+
+Output From Lambda Layer (Layer1)
 ![alt text][image11]
+
+Output From Cropping2D Layer (Layer2)
 ![alt text][image12]
 
 ## Details About Files In This Directory
