@@ -10,6 +10,7 @@
 [image6]: ./examples/placeholder_small.png "Normal Image"
 [image7]: ./examples/placeholder_small.png "Flipped Image"
 [image8]: ./images/track1.gif "Track 1 Animation"
+[image9]: ./images/recovery.gif "Recovery Animation"
 
 
 Overview
@@ -131,11 +132,10 @@ To capture good driving behavior, I first recorded two laps on track one using c
 
 ![alt text][image8]
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... The below animated GIF shows what a recovery looks like starting from from the edge to the center of the road
 
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
+
+![alt text][image8]
 
 Then I repeated this process on track two in order to get more data points.
 
