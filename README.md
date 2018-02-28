@@ -9,6 +9,7 @@
 [image5]: ./examples/placeholder_small.png "Recovery Image"
 [image6]: ./examples/placeholder_small.png "Normal Image"
 [image7]: ./examples/placeholder_small.png "Flipped Image"
+[image8]: ./images/track1.gif "Track 1 Animation"
 
 
 Overview
@@ -183,6 +184,8 @@ The fourth argument, `run1`, is the directory in which to save the images seen b
 
 ```sh
 ls run1
+
+![alt text][image8]
 
 [2017-01-09 16:10:23 EST]  12KiB 2017_01_09_21_10_23_424.jpg
 [2017-01-09 16:10:23 EST]  12KiB 2017_01_09_21_10_23_451.jpg
