@@ -165,6 +165,7 @@ model.save(filepath)
 ```
 
 Once the model has been saved, it can be used with drive.py using this command:
+![alt text][image8]
 
 ```sh
 python drive.py model.h5
@@ -185,7 +186,7 @@ The fourth argument, `run1`, is the directory in which to save the images seen b
 ```sh
 ls run1
 
-![alt text][image8]
+
 
 [2017-01-09 16:10:23 EST]  12KiB 2017_01_09_21_10_23_424.jpg
 [2017-01-09 16:10:23 EST]  12KiB 2017_01_09_21_10_23_451.jpg
