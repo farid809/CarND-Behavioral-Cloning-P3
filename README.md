@@ -104,7 +104,7 @@ For details about how I created the training data, see the next section.
 
 ### 1. Solution Design Approach
 
-The overall strategy for deriving a model architecture was to ...
+he overall strategy for deriving a model architecture was to ...
 
 My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
 
@@ -135,7 +135,7 @@ To capture good driving behavior, I first recorded two laps on track one using c
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... The below animated GIF shows what a recovery looks like starting from from the edge to the center of the road
 
 
-![alt text][image8]
+![alt text][image9]
 
 Then I repeated this process on track two in order to get more data points.
 
