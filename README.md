@@ -183,7 +183,7 @@ model.save(filepath)
 
 Once the model has been saved, it can be used with drive.py using this command:
 
-
+https://keras.io/visualization/
 ```sh
 python drive.py model.h5
 ```
@@ -246,3 +246,6 @@ Will run the video at 48 FPS. The default FPS is 60.
 
 ## [References]
 
+[Keras Visualization] https://keras.io/visualization/
+[Keras Fit Generator] https://keras.io/models/model/#fit_generator
+[nVidia Model] https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf
