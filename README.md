@@ -129,7 +129,7 @@ Here is a visualization of the architecture (note: visualizing the architecture 
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
-![alt text][image2]
+![alt text][image8]
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
 
@@ -165,7 +165,7 @@ model.save(filepath)
 ```
 
 Once the model has been saved, it can be used with drive.py using this command:
-![alt text][image8]
+
 
 ```sh
 python drive.py model.h5
