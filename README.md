@@ -10,12 +10,15 @@
 [image6]: ./images/image-original.png "Normal Image"
 [image7]: ./images/image-flipped.png "Flipped Image"
 [image8]: ./images/track1.gif "Track 1 Animation"
+[image8a]: ./images/track2.png "Track 2 Animation"
 [image9]: ./images/recovery.gif "Recovery Animation"
 
 
 [image10]: ./images/test_input.png "Test Input Image"
 [image11]: ./images/lambda_out.png "Lambda Layer ouptut"
 [image12]: ./images/Cropping2d_out.png "Cropping2D output"
+
+
 
 
 Overview
@@ -144,6 +147,8 @@ I then recorded the vehicle recovering from the left side and right sides of the
 ![alt text][image9]
 
 Then I repeated this process on track two in order to get more data points.
+
+![alt text][image8a]
 
 To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
 
