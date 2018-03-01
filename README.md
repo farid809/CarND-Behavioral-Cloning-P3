@@ -10,7 +10,7 @@
 [image6]: ./images/image-original.png "Normal Image"
 [image7]: ./images/image-flipped.png "Flipped Image"
 [image8]: ./images/track1.gif "Track 1 Animation"
-[image8a]: ./images/track2.png "Track 2 Animation"
+[image8a]: ./images/track2run1.gif "Track 2 Animation"
 [image9]: ./images/recovery.gif "Recovery Animation"
 
 
