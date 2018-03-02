@@ -85,39 +85,42 @@ Provided below is the strategy I've followed to collect training data.
 * Five laps driving centered in track2
 
 
-## Model Architecture and Training Strategy
-
-### 1. Model Architecture
-
-The initial model I used  based on nVidia model which consisted of lambda normalization layer followed by 5 convulutional layer followed by 4 fully connected layers. The model also includes RELU layers to introduce nonlinearity. The data is normalized in the model using a Keras lambda layer. I attempted to train this model and tune different hyperparameters  However the model didn't generalize enough to drive centered on track 1.
-
-
-
-
-My Final model is based on nVidia model and consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
-
-
-### 2. Overfitting
-
-The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
-
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
-
-### 3. Model parameter tuning
-
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25).
-
-### 4. Appropriate training data
-
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
-
-For details about how I created the training data, see the next section. 
 
 ## Model Architecture and Training Strategy
 
 ### 1. Solution Design Approach
 
+
+#### 1. Model Architecture
+
+The initial model I used  based on nVidia model which consisted of lambda normalization layer followed by 5 convulutional layer followed by 4 fully connected layers. The model also includes RELU layers to introduce nonlinearity. The data is normalized in the model using a Keras lambda layer. I attempted to train this model and tune different hyperparameters  However the model didn't generalize enough to drive centered on track 1.
+
+
+My Final model is based on nVidia model and consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
+
+
+
+
+
+
+#### 2. Overfitting
+
+The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
+
+The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 he overall strategy for deriving a model architecture was to ...
+
+
+#### 3. Model parameter tuning
+
+The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25).
+
+#### 4. Appropriate training data
+
+Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
+
+For details about how I created the training data, see the next section. 
+
 
 My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
 
