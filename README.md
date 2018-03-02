@@ -71,26 +71,31 @@ Using the Udacity provided simulator and my drive.py file, the car can be driven
 python drive.py model.h5
 ```
 
-#### 3. Submission code is usable and readable
+#### 3. How to use submitted code
 
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
 ## Data Collection
 
-My data collection approach consist of the following : 
+Provided below is the strategy I've followed to collect training data. 
 * Five laps driving smoothly centered in track1 (CW)
 * Five laps driving centered in track1 (CCW)
 * Two laps of recovery driving from the sides
 * Two laps focusing on driving smoothly around curves
+* Five laps driving centered in track2
 
 
 ## Model Architecture and Training Strategy
 
 ### 1. Model Architecture
 
-My model Final model is based on nVidiaconsists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
+The initial model I used  based on nVidia model which consisted of lambda normalization layer followed by 5 convulutional layer followed by 4 fully connected layers. The model also includes RELU layers to introduce nonlinearity. The data is normalized in the model using a Keras lambda layer. I attempted to train this model and tune different hyperparameters  However the model didn't generalize enough to drive centered on track 1.
 
-The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
+
+
+
+My Final model is based on nVidia model and consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
+
 
 ### 2. Overfitting
 
