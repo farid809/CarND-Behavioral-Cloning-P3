@@ -211,7 +211,7 @@ python drive.py model.h5 run1
 ```
 
 The fourth argument, `run1`, is the directory in which to save the images seen by the agent. If the directory already exists, it'll be overwritten.
-
+* 
 ```sh
 ls run1
 
@@ -258,6 +258,6 @@ Will run the video at 48 FPS. The default FPS is 60.
 
 ## [References]
 
-[Keras Visualization] https://keras.io/visualization/
-[Keras Fit Generator] https://keras.io/models/model/#fit_generator
-[nVidia Model] https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf
+* [Keras Visualization] https://keras.io/visualization/
+* [Keras Fit Generator] https://keras.io/models/model/#fit_generator
+* [nVidia Model] https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf
