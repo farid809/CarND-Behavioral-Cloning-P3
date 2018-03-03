@@ -117,6 +117,7 @@ For details about how I created the training data, see the next section.
 
 My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
 
+
 In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
 
 To combat the overfitting, I modified the model so that ...
@@ -176,12 +177,15 @@ I used this training data for training the model. The validation set helped dete
 Finally, I tested the model using sample input image and visualized the output of Frist and 2nd layers. Below are sample output from Lambda and Cropping2D layers respectively. 
 
 Original Input Image
+
 ![alt text][image10]
 
 Output From Lambda Layer (Layer1)
+
 ![alt text][image11]
 
 Output From Cropping2D Layer (Layer2)
+
 ![alt text][image12]
 
 
