@@ -17,7 +17,6 @@
 [image10]: ./images/test_input.png "Test Input Image"
 [image11]: ./images/lambda_out.png "Lambda Layer ouptut"
 [image12]: ./images/Cropping2d_out.png "Cropping2D output"
-
 [image13]: ./images/hist.PNG "Data Set Histogram"
 [image14]: ./images/hist_augmented.PNG "Augmented Histogram"
 [image15]: ./images/model_loss.PNG "Model Validation Loss"
@@ -62,7 +61,7 @@ This project includes the following files:
 * [model.h5](model.h5) (a trained Keras model)
 * [README.md](README.md)a report writeup file (README.md markdown)
 * [video.mp4](video.mp4) (a video recording of your vehicle driving autonomously around the track for at least one full lap)
-* [Explore.ipynb](Explore.ipynb) (Data exploration botebook).
+* [Explore.ipynb](Explore.ipynb) (Data exploration notebook).
 
 #### 2. Model Training and driving code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
