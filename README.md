@@ -126,8 +126,7 @@ Then I ...
 
 The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
 
-At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
-
+At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.1
 ### 2. Final Model Architecture
 
 The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
@@ -192,6 +191,6 @@ Output From Cropping2D Layer (Layer2)
 
 ## [References]
 
-* [Keras Visualization] https://keras.io/visualization/
-* [Keras Fit Generator] https://keras.io/models/model/#fit_generator
-* [nVidia Model] https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf
+1. [Keras Visualization] https://keras.io/visualization/
+2. [Keras Fit Generator] https://keras.io/models/model/#fit_generator
+3. [nVidia Model] https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf
