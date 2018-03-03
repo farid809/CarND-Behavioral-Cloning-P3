@@ -18,7 +18,9 @@
 [image11]: ./images/lambda_out.png "Lambda Layer ouptut"
 [image12]: ./images/Cropping2d_out.png "Cropping2D output"
 
-
+[image13]: ./images/hist.png "Data Set Histogram"
+[image14]: ./images/hist_augmented.png "Augmented Histogram"
+[image15]: ./images/model_loss.png "Model Validation Loss"
 
 
 Overview
@@ -155,6 +157,8 @@ My strategy for augmenting the data set included recording more laps by driving 
 
 ![alt text][image8]
 
+![alt text][image13]
+
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to  recover from either side of the road. The below animated GIF shows what a recovery looks like starting from from the edge to the center of the road
 
 
@@ -169,6 +173,7 @@ To augment the data sat, I also flipped images and angles thinking that this wou
 ![alt text][image6]
 ![alt text][image7]
 
+![alt text][image14]
 
 After the collection process, I had X number of data points. I then preprocessed this data by eliminated data with near-zero steering angle to balance the data set.
 
@@ -176,6 +181,8 @@ After the collection process, I had X number of data points. I then preprocessed
 I randomly shuffled the data set and put 80% of the data into a validation set. 
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 40 as validation loss stopped improving and starting increasing. However this model was only able to run in track1 and wasn't able to drive in track2. I kept experiementing with number of EPOCHS until i was able to produce a model that is able to driving in both tracks after 120 EPOCHS. Also, I used an adam optimizer so that manually training the learning rate wasn't necessary.
+
+![alt text][image15]
 
 
 Finally, I tested the model using sample input image and visualized the output of Frist and 2nd layers. Below are sample output from Lambda and Cropping2D layers respectively. 
