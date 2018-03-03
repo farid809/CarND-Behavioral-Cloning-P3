@@ -95,7 +95,7 @@ Provided below is the strategy I've followed to collect training data.
 
 #### 1. Model Architecture
 
-The initial model I used  based on nVidia model which consisted of lambda normalization layer followed by 5 convulutional layer followed by 4 fully connected layers. The model also includes RELU layers to introduce nonlinearity. The data is normalized in the model using a Keras lambda layer. I attempted to train this model and tune different hyperparameters  However the model didn't generalize enough to drive centered on track 1.
+The initial model I used  based on nVidia model which consisted of lambda normalization layer followed by 5 convulutional layer followed by 4 fully connected layers. The model also includes RELU layers to introduce nonlinearity. The data is normalized in the model using a Keras lambda layer. 
 
 
 #### 2. Overfitting
@@ -108,34 +108,15 @@ The model was trained and validated on different data sets to ensure that the mo
 
 #### 3. Model parameter tuning
 
-I initially tried to use different learning rates, however, I got a better result by using Adam optimizer, so the learning rate was not tuned manually. I also, experimented with different batch sizes and EPOCH counts.
-
-#### 4. Appropriate training data
-
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
-
-For details about how I created the training data, see the next section. 
+I initially tried to use different learning rates, however, I got a better result by using Adam optimizer, so the learning rate was not tuned manually. I also, experimented with different batch sizes and EPOCH counts. 
 
 
-My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
 
 
-In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
-
-To combat the overfitting, I modified the model so that ...
-
-Then I ... 
-
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
-
-At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.1
-### 2. Final Model Architecture
-
-The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
+### 4. Final Model Architecture
 
 
-My Final model is based on nVidia model and consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
-
+My Final model is based on nVidia model and which consisted of lambda normalization layer followed by 5 convulutional layer followed by 4 fully connected layers. The model also includes RELU layers to introduce nonlinearity. The data is normalized in the model using a Keras lambda layer. Also, I choose to include dropout layer after convulutional layer and before 2 of the fully connected layers as illustrated in the architecture diagram below. 
 
 Here is a visualization of the architecture using Keras plot_model from keras.utils library 
 
@@ -144,7 +125,7 @@ Here is a visualization of the architecture using Keras plot_model from keras.ut
 
 
 
-### 3. Creation of the Training Set & Training Process
+### 5. Creation of the Training Set & Training Process
 
 
 #### Image Preprocessing
@@ -175,12 +156,9 @@ To augment the data sat, I also flipped images and angles thinking that this wou
 
 ![alt text][image14]
 
-After the collection process, I had X number of data points. I then preprocessed this data by eliminated data with near-zero steering angle to balance the data set.
+After the collection process, I had 55806 number of data points. I then preprocessed this data by eliminated data with near-zero steering angle to balance the data set. I randomly shuffled the data set and put 20% of the data into a validation set by passing the following parameters to model.fit (validation_split=0.20, shuffle=True). 
 
-
-I randomly shuffled the data set and put 80% of the data into a validation set. 
-
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 40 as validation loss stopped improving and starting increasing. However this model was only able to run in track1 and wasn't able to drive in track2. I kept experiementing with number of EPOCHS until i was able to produce a model that is able to driving in both tracks after 120 EPOCHS. Also, I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. The ideal number of epochs was 40 as validation loss stopped improving and starting increasing.  However this model was only able to run in track1 and wasn't able to drive in track2. I kept experiementing with different number of EPOCHS until i was able to produce a model that is able to driving in both tracks after 120 EPOCHS. Also, I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
 ![alt text][image15]
 
@@ -199,7 +177,7 @@ Output From Cropping2D Layer (Layer2)
 
 ![alt text][image12]
 
-
+At the end of the process, the vehicle is able to drive autonomously on both tracks without leaving the  road.
 
 ## [References]
 
