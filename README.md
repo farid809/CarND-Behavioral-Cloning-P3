@@ -18,9 +18,9 @@
 [image11]: ./images/lambda_out.png "Lambda Layer ouptut"
 [image12]: ./images/Cropping2d_out.png "Cropping2D output"
 
-[image13]: ./images/hist.png "Data Set Histogram"
-[image14]: ./images/hist_augmented.png "Augmented Histogram"
-[image15]: ./images/model_loss.png "Model Validation Loss"
+[image13]: ./images/hist.PNG "Data Set Histogram"
+[image14]: ./images/hist_augmented.PNG "Augmented Histogram"
+[image15]: ./images/model_loss.PNG "Model Validation Loss"
 
 
 Overview
