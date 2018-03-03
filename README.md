@@ -144,11 +144,18 @@ Here is a visualization of the architecture using Keras plot_model from keras.ut
 
 ### 3. Creation of the Training Set & Training Process
 
-To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
+
+#### Image Preprocessing
+1. Eliminated data with near-zero steering angle to balance the data set.
+2. Used Lambda Layer to help with data normalization.
+3. Used Cropping2D layer to remove area's that don't help the model.
+
+#### Data Augmenation
+My strategy for augmenting the data set included recording more laps by driving in both tracks and performing image manipulation by flipping the images. To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
 ![alt text][image8]
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... The below animated GIF shows what a recovery looks like starting from from the edge to the center of the road
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to  recover from either side of the road. The below animated GIF shows what a recovery looks like starting from from the edge to the center of the road
 
 
 ![alt text][image9]
@@ -157,20 +164,18 @@ Then I repeated this process on track two in order to get more data points.
 
 ![alt text][image8a]
 
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
+To augment the data sat, I also flipped images and angles thinking that this would help balancing the data set and produce a generalized model that is not biased toward driving either sid For example, here is an image that has then been flipped:
 
 ![alt text][image6]
 ![alt text][image7]
 
 
-Etc ....
-
-After the collection process, I had X number of data points. I then preprocessed this data by ...
+After the collection process, I had X number of data points. I then preprocessed this data by eliminated data with near-zero steering angle to balance the data set.
 
 
-I randomly shuffled the data set and put Y% of the data into a validation set. 
+I randomly shuffled the data set and put 80% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 40 as validation loss stopped improving and starting increasing. However this model was only able to run in track1 and wasn't able to drive in track2. I kept experiementing with number of EPOCHS until i was able to produce a model that is able to driving in both tracks after 120 EPOCHS. Also, I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
 
 Finally, I tested the model using sample input image and visualized the output of Frist and 2nd layers. Below are sample output from Lambda and Cropping2D layers respectively. 
