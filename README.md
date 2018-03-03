@@ -63,10 +63,20 @@ This project includes the following files:
 * [video.mp4](video.mp4) (a video recording of your vehicle driving autonomously around the track for at least one full lap)
 * [Explore.ipynb](Explore.ipynb) (Data exploration notebook).
 
+### Sample Project Outcome
 
+#### CarND | Project 3 - Behavioral Cloning - Track1
 
 <a href="https://www.youtube.com/watch?v=rnTRSSI2zfM&feature=youtu.be" target="_blank"><img src="http://img.youtube.com/vi/rnTRSSI2zfM/0.jpg" 
 alt="CarND | Project 3 - Behavioral Cloning - Track1" width="240" height="180" border="10" /></a>
+
+
+#### CarND | Project 3 - Behavioral Cloning - Track2
+
+<a href="https://www.youtube.com/watch?v=vRrchzxlCds&feature=youtu.be" target="_blank"><img src="http://img.youtube.com/vi/vRrchzxlCds/0.jpg" 
+alt="CarND | Project 3 - Behavioral Cloning - Track2" width="240" height="180" border="10" /></a>
+
+
 
 #### 2. Model Training and driving code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
