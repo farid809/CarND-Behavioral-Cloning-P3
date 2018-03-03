@@ -96,24 +96,17 @@ Provided below is the strategy I've followed to collect training data.
 The initial model I used  based on nVidia model which consisted of lambda normalization layer followed by 5 convulutional layer followed by 4 fully connected layers. The model also includes RELU layers to introduce nonlinearity. The data is normalized in the model using a Keras lambda layer. I attempted to train this model and tune different hyperparameters  However the model didn't generalize enough to drive centered on track 1.
 
 
-My Final model is based on nVidia model and consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
-
-
-
-
-
-
 #### 2. Overfitting
 
-The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
+I included 2 dropout layer before and after the fully connected layer as illustrated in the model visualization below to reduce overfitting. However, I was able to get better results by introducing SpatialDropout2D layer after each convultional layer
 
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
-he overall strategy for deriving a model architecture was to ...
+The model was trained and validated on different data sets to ensure that the model was not overfitting. The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+
 
 
 #### 3. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25).
+I initially tried to use different learning rates, however, I got a better result by using Adam optimizer, so the learning rate was not tuned manually. I also, experimented with different batch sizes and EPOCH counts.
 
 #### 4. Appropriate training data
 
@@ -138,9 +131,15 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
 The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
 
+
+My Final model is based on nVidia model and consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
+
+
 Here is a visualization of the architecture using Keras plot_model from keras.utils library 
 
 ![alt text][image1]
+
+
 
 
 ### 3. Creation of the Training Set & Training Process
