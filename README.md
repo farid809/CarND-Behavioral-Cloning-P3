@@ -30,14 +30,6 @@ Overview
 
 In this project, I'm using deep neural networks and convolutional neural networks to clone driving behavior. I provided below step by step guide showing the approach i used to to train, validate and test a model using Keras. The model will output a steering angle to a simulated autonomous vehicle. A simulator are also used to gather the training data by capturing the steering angle and speed of a human drive (behavior cloning).
 
-Project Files: 
-* model.py (script used to create and train the model)
-* drive.py (script to drive the car - feel free to modify this file)
-* model.h5 (a trained Keras model)
-* a report writeup file (README.md markdown)
-* [video.mp4](video.mp4) (a video recording of your vehicle driving autonomously around the track for at least one full lap)
-
-This README file describes how to output the video in the "Details About Files In This Directory" section.
 
 
 The Project
@@ -48,6 +40,8 @@ The goals / steps of this project are the following:
 * Use the model to drive the vehicle autonomously around the first track in the simulator. The vehicle should remain on the road for an entire loop around the track.
 * Summarize the results with a written report
 
+
+
 ### Dependencies
 This lab requires:
 
@@ -56,17 +50,19 @@ This lab requires:
 * Keras
 
 
-
 ---
 ### Files Submitted 
 
 #### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 This project includes the following files:
-* model.py containing the script to create and train the model
-* drive.py for driving the car in autonomous mode
-* model.h5 containing a trained convolution neural network 
-* writeup_report.md  summarizing the results
+
+* [model.py](model.py) (script used to create and train the model)
+* [drive.py](drive.py)(script to drive the car - feel free to modify this file)
+* [model.h5](model.h5) (a trained Keras model)
+* [README.md](README.md)a report writeup file (README.md markdown)
+* [video.mp4](video.mp4) (a video recording of your vehicle driving autonomously around the track for at least one full lap)
+* [Explore.ipynb](Explore.ipynb) (Data exploration botebook).
 
 #### 2. Model Training and driving code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
